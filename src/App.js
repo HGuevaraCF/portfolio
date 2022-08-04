@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import {
   Route,
   Routes,
-  BrowserRouter
+  HashRouter
 } from "react-router-dom";
 import AboutMe from './components/about';
 import Portfolio from './components/portfolio';
@@ -18,7 +18,7 @@ import Footer from './components/footer';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter>
       <Navbar className='navbar' expand="lg">
         <Container>
           <Navbar.Brand href="#home">Hector Guevara</Navbar.Brand>
@@ -41,7 +41,7 @@ function App() {
           <Route path="/resume" element={<Resume/>} />
         </Routes>
       </div>
-      </BrowserRouter>
+      </HashRouter>
       <Footer/>
     </div>
   );
