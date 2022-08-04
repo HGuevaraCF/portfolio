@@ -26,9 +26,9 @@ function App() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="/portfolio">About Me</Nav.Link>
-              <Nav.Link href="/portfolio/#/portfolio">Portfolio</Nav.Link>
-              <Nav.Link href="/portfolio/#/contact">Contact</Nav.Link>
-              <Nav.Link href="/portfolio/#/resume">Resume</Nav.Link>
+              <Nav.Link href="/portfolio/portfolio">Portfolio</Nav.Link>
+              <Nav.Link href="/portfolio/contact">Contact</Nav.Link>
+              <Nav.Link href="/portfolio/resume">Resume</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
