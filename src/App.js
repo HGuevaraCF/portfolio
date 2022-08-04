@@ -26,7 +26,7 @@ function App() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="/">About Me</Nav.Link>
-              <Nav.Link href="/portfolio">Portfolio</Nav.Link>
+              <Nav.Link href="/work">Portfolio</Nav.Link>
               <Nav.Link href="/contact">Contact</Nav.Link>
               <Nav.Link href="/resume">Resume</Nav.Link>
             </Nav>
@@ -36,7 +36,7 @@ function App() {
       <div className='content'>
         <Routes>
         <Route exact path="/" element={<AboutMe/>} />
-          <Route path="/portfolio" element={<Portfolio/>} />
+          <Route path="/work" element={<Portfolio/>} />
           <Route path="/contact" element={<Contact/>} />
           <Route path="/resume" element={<Resume/>} />
         </Routes>
