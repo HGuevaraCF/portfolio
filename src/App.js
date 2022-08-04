@@ -26,19 +26,19 @@ function App() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="/portfolio">About Me</Nav.Link>
-              <Nav.Link href="/portfolio/portfolio">Portfolio</Nav.Link>
-              <Nav.Link href="/portfolio/contact">Contact</Nav.Link>
-              <Nav.Link href="/portfolio/resume">Resume</Nav.Link>
+              <Nav.Link href="/portfolio/#/portfolio">Portfolio</Nav.Link>
+              <Nav.Link href="/portfolio/#/contact">Contact</Nav.Link>
+              <Nav.Link href="/portfolio/#/resume">Resume</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
       <div className='content'>
         <Routes>
-        <Route exact path="/#" element={<AboutMe/>} />
-          <Route path="/#/portfolio" element={<Portfolio/>} />
-          <Route path="/#/contact" element={<Contact/>} />
-          <Route path="/#/resume" element={<Resume/>} />
+        <Route exact path="/" element={<AboutMe/>} />
+          <Route path="/portfolio" element={<Portfolio/>} />
+          <Route path="/contact" element={<Contact/>} />
+          <Route path="/resume" element={<Resume/>} />
         </Routes>
       </div>
       </BrowserRouter>
