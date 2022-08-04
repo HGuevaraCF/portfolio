@@ -18,7 +18,7 @@ import Footer from './components/footer';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename='/'>
       <Navbar className='navbar' expand="lg">
         <Container>
           <Navbar.Brand href="#home">Hector Guevara</Navbar.Brand>
