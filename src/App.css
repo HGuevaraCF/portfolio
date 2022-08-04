@@ -1,3 +1,80 @@
+body {
+  background-color: #007ea7;
+}
+
+.navbar {
+  background-color: #00a8e8 !important;
+  color: #003459 !important;
+}
+
+button {
+  background-color: #003459 !important;
+}
+
+.aboutImage{
+  border-radius: 50% !important;
+  margin-bottom: 1%;
+  border: 2px solid white;
+  background-size: cover;
+  width: 10rem;
+  height: 10rem;
+}
+
+.footer {
+  background-color: #003459;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.footer div a {
+  padding: 0rem 1rem;
+  color: #007ea7;
+}
+
+.content {
+  margin-top: 2%;
+  margin-bottom: 5%;
+  color: white;
+}
+
+h1 {
+  margin-bottom: 2%;
+}
+
+.projectCard {
+  background-size: cover;
+  border-radius: 1rem;
+  margin: 1rem;
+  width: 18rem;
+  height: 10rem;
+  padding: 0px;
+}
+
+.text-muted {
+  color: white !important;
+}
+
+div.projectInfo {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+div.projectInfo p {
+  color: black;
+  font-weight: bold;
+}
+
 .App {
   text-align: center;
 }
@@ -12,6 +89,7 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
 
 .App-header {
   background-color: #282c34;
@@ -32,6 +110,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
