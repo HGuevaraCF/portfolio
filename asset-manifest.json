@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.7bc816a1.css",
+    "main.js": "/portfolio/static/js/main.8f978eb3.js",
+    "static/js/787.fb771931.chunk.js": "/portfolio/static/js/787.fb771931.chunk.js",
+    "static/media/1.png": "/portfolio/static/media/1.1e5475b6970a594030c7.png",
+    "static/media/nurseXpress.png": "/portfolio/static/media/nurseXpress.a268dd907da6ae44de5e.png",
+    "static/media/weatherDashboard.png": "/portfolio/static/media/weatherDashboard.d1b8e19fea665552672a.png",
+    "static/media/CV.pdf": "/portfolio/static/media/CV.b0619b89f6e191823b90.pdf",
+    "static/media/wolfinance.png": "/portfolio/static/media/wolfinance.155b2acda5df57e3451e.png",
+    "static/media/quiz.png": "/portfolio/static/media/quiz.e184feadc7f6d90fdeca.png",
+    "static/media/noteTaker.png": "/portfolio/static/media/noteTaker.31f095654303e012d492.png",
+    "static/media/passwordGenerator.png": "/portfolio/static/media/passwordGenerator.871a29c8162bd7cf48e0.png",
+    "index.html": "/portfolio/index.html",
+    "main.7bc816a1.css.map": "/portfolio/static/css/main.7bc816a1.css.map",
+    "main.8f978eb3.js.map": "/portfolio/static/js/main.8f978eb3.js.map",
+    "787.fb771931.chunk.js.map": "/portfolio/static/js/787.fb771931.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7bc816a1.css",
+    "static/js/main.8f978eb3.js"
+  ]
+}
