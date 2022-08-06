@@ -36,10 +36,10 @@ function App() {
       </Navbar>
       <div className='content'>
         <Routes>
-          <Route path="/portfolio" element={<AboutMe/>} />
-          <Route path="/portfolio/work" element={<Portfolio/>} />
-          <Route path="/portfolio/contact" element={<Contact/>} />
-          <Route path="/portfolio/resume" element={<Resume/>} />
+          <Route path="/portfolio" component={AboutMe} />
+          <Route path="/portfolio/work" component={Portfolio} />
+          <Route path="/portfolio/contact" component={Contact} />
+          <Route path="/portfolio/resume" component={Resume} />
         </Routes>
       </div>
       </BrowserRouter>
