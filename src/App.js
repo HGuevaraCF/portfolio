@@ -9,6 +9,7 @@ import Navbar from 'react-bootstrap/Navbar';
 //   Router
 // } from "react-router-dom";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import AboutMe from './components/about';
 import Portfolio from './components/portfolio';
 import Contact from './components/contact';
@@ -27,10 +28,10 @@ function App() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/portfolio">About Me</Nav.Link>
-              <Nav.Link href="/portfolio/work">Portfolio</Nav.Link>
-              <Nav.Link href="/portfolio/contact">Contact</Nav.Link>
-              <Nav.Link href="/portfolio/resume">Resume</Nav.Link>
+              <Link to="/portfolio"><Nav.Link >About Me</Nav.Link></Link>
+              <Link to="/portfolio/work"><Nav.Link >Portfolio</Nav.Link></Link>
+              <Link to="/portfolio/contact"><Nav.Link >Contact</Nav.Link></Link>
+              <Link to="/portfolio/resume"><Nav.Link >Resume</Nav.Link></Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
