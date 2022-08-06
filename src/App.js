@@ -70,10 +70,10 @@ function App() {
     <div>
       <Header />
       <Router>
-        <Route path="/portfolio/" component={AboutMe} />
-        <Route path="/portfolio/work" component={Portfolio} />
-        <Route path="/portfolio/contact" component={Contact} />
-        <Route path="/portfolio/resume" component={Resume} />
+        <Route path="/portfolio/" component={<AboutMe/>} />
+        <Route path="/portfolio/work" component={<Portfolio/>} />
+        <Route path="/portfolio/contact" component={<Contact/>} />
+        <Route path="/portfolio/resume" component={<Resume/>} />
       </Router >
       <Footer />
     </div >
