@@ -6,8 +6,7 @@ import {
   Route,
   Routes,
   BrowserRouter,
-  Router,
-  Switch
+  Router
 } from "react-router-dom";
 import AboutMe from './components/about';
 import Portfolio from './components/portfolio';
@@ -21,32 +20,30 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar className='navbar' expand="lg">
-          <Container>
-            <Navbar.Brand href="#home">Hector Guevara</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="me-auto">
-                <Nav.Link href="/portfolio">About Me</Nav.Link>
-                <Nav.Link href="/portfolio/work">Portfolio</Nav.Link>
-                <Nav.Link href="/portfolio/contact">Contact</Nav.Link>
-                <Nav.Link href="/portfolio/resume">Resume</Nav.Link>
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
-        <div className='content'>
-          <Router>
-            <Switch>
-              <Route path="/portfolio" element={<AboutMe />} />
-              <Route path="/portfolio/work" element={<Portfolio />} />
-              <Route path="/portfolio/contact" element={<Contact />} />
-              <Route path="/portfolio/resume" element={<Resume />} />
-            </Switch>
-          </Router>
-        </div>
+      <Navbar className='navbar' expand="lg">
+        <Container>
+          <Navbar.Brand href="#home">Hector Guevara</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link href="/portfolio">About Me</Nav.Link>
+              <Nav.Link href="/portfolio/work">Portfolio</Nav.Link>
+              <Nav.Link href="/portfolio/contact">Contact</Nav.Link>
+              <Nav.Link href="/portfolio/resume">Resume</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+      <div className='content'>
+        <Router>
+          <Route path="/portfolio" element={<AboutMe/>} />
+          <Route path="/portfolio/work" element={<Portfolio/>} />
+          <Route path="/portfolio/contact" element={<Contact/>} />
+          <Route path="/portfolio/resume" element={<Resume/>} />
+        </Router>
+      </div>
       </BrowserRouter>
-      <Footer />
+      <Footer/>
     </div>
   );
 }
