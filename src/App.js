@@ -28,10 +28,10 @@ function App() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Link to="/portfolio"><Nav.Link >About Me</Nav.Link></Link>
-              <Link to="/portfolio/work"><Nav.Link >Portfolio</Nav.Link></Link>
-              <Link to="/portfolio/contact"><Nav.Link >Contact</Nav.Link></Link>
-              <Link to="/portfolio/resume"><Nav.Link >Resume</Nav.Link></Link>
+              <Nav.Link to="/portfolio">About Me</Nav.Link>
+              <Nav.Link to="/portfolio/work">Portfolio</Nav.Link>
+              <Nav.Link to="/portfolio/contact">Contact</Nav.Link>
+              <Nav.Link to="/portfolio/resume">Resume</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
