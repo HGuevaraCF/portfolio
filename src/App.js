@@ -25,17 +25,17 @@ function App() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="portfolio/">About Me</Nav.Link>
-              <Nav.Link href="portfolio/work">Portfolio</Nav.Link>
-              <Nav.Link href="portfolio/contact">Contact</Nav.Link>
-              <Nav.Link href="portfolio/resume">Resume</Nav.Link>
+              <Nav.Link href="/portfolio">About Me</Nav.Link>
+              <Nav.Link href="/portfolio/work">Portfolio</Nav.Link>
+              <Nav.Link href="/portfolio/contact">Contact</Nav.Link>
+              <Nav.Link href="/portfolio/resume">Resume</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
       <div className='content'>
         <Routes>
-          <Route path="/portfolio/" element={<AboutMe/>} />
+          <Route path="/portfolio" element={<AboutMe/>} />
           <Route path="/portfolio/work" element={<Portfolio/>} />
           <Route path="/portfolio/contact" element={<Contact/>} />
           <Route path="/portfolio/resume" element={<Resume/>} />
