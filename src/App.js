@@ -56,6 +56,8 @@
 
 
 import { Route, Switch, Redirect } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 // import About from "./pages/About";
 // import Contact from "./pages/Contact";
 // import Portfolio from "./pages/Portfolio";
@@ -73,21 +75,12 @@ function App() {
   return (
     <div>
       <Header />
-      <Switch>
-        <Route
-          // Used to default / to the homepage
-          exact path="/portfolio/"
-          render={() => {
-            return (
-              <Redirect to="/Tec20ReactPortfolio/home" />
-            )
-          }}
-        />
+      <Router>
         <Route path="/portfolio/" component={AboutMe} />
         <Route path="/portfolio/work" component={Portfolio} />
         <Route path="/portfolio/contact" component={Contact} />
         <Route path="/portfolio/resume" component={Resume} />
-      </Switch >
+      </Router >
       <Footer />
     </div >
   )
