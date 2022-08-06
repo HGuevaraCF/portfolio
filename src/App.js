@@ -2,12 +2,13 @@ import './App.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import {
-  Route,
-  Routes,
-  BrowserRouter,
-  Router
-} from "react-router-dom";
+// import {
+//   Route,
+//   Routes,
+//   BrowserRouter,
+//   Router
+// } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AboutMe from './components/about';
 import Portfolio from './components/portfolio';
 import Contact from './components/contact';
@@ -19,7 +20,7 @@ import Footer from './components/footer';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <Router>
       <Navbar className='navbar' expand="lg">
         <Container>
           <Navbar.Brand href="#home">Hector Guevara</Navbar.Brand>
@@ -36,13 +37,13 @@ function App() {
       </Navbar>
       <div className='content'>
         <Routes>
-          <Route path="/portfolio" component={AboutMe} />
-          <Route path="/portfolio/work" component={Portfolio} />
-          <Route path="/portfolio/contact" component={Contact} />
-          <Route path="/portfolio/resume" component={Resume} />
+          <Route path="/portfolio" element={<AboutMe/>} />
+          <Route path="/portfolio/work" element={<Portfolio/>} />
+          <Route path="/portfolio/contact" element={<Contact/>} />
+          <Route path="/portfolio/resume" element={<Resume/>} />
         </Routes>
       </div>
-      </BrowserRouter>
+      </Router>
       <Footer/>
     </div>
   );
