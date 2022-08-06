@@ -15,27 +15,29 @@ import Portfolio from './components/portfolio';
 import Contact from './components/contact';
 import Resume from './components/resume';
 import Footer from './components/footer';
+import Header from './components/footer';
 // import { AboutMe, Portfolio, Contact, Resume, Footer } from './components'
 
 
 function App() {
   return (
     <div className="App">
+      <Header/>
       <Router>
-      <Navbar className='navbar' expand="lg">
+      {/* <Navbar className='navbar' expand="lg">
         <Container>
           <Navbar.Brand href="#home">Hector Guevara</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link to="/portfolio">About Me</Nav.Link>
-              <Nav.Link to="/portfolio/work">Portfolio</Nav.Link>
-              <Nav.Link to="/portfolio/contact">Contact</Nav.Link>
-              <Nav.Link to="/portfolio/resume">Resume</Nav.Link>
+              <Nav.Link href="/portfolio">About Me</Nav.Link>
+              <Nav.Link href="/portfolio/work">Portfolio</Nav.Link>
+              <Nav.Link href="/portfolio/contact">Contact</Nav.Link>
+              <Nav.Link href="/portfolio/resume">Resume</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
-      </Navbar>
+      </Navbar> */}
       <div className='content'>
         <Routes>
           <Route path="/portfolio" element={<AboutMe/>} />
