@@ -18,7 +18,7 @@ import Footer from './components/footer';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename='/#'>
+      <BrowserRouter basename='/'>
       <Navbar className='navbar' expand="lg">
         <Container>
           <Navbar.Brand href="#home">Hector Guevara</Navbar.Brand>
@@ -35,7 +35,7 @@ function App() {
       </Navbar>
       <div className='content'>
         <Routes>
-        <Route exact path="/" element={<AboutMe/>} />
+          <Route exact path="/" element={<AboutMe/>} />
           <Route path="/work" element={<Portfolio/>} />
           <Route path="/contact" element={<Contact/>} />
           <Route path="/resume" element={<Resume/>} />
