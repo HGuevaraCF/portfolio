@@ -35,7 +35,7 @@ function App() {
       </Navbar>
       <div className='content'>
         <Routes>
-          <Route exact path="/" element={<AboutMe/>} />
+          <Route path="/" element={<AboutMe/>} />
           <Route path="/work" element={<Portfolio/>} />
           <Route path="/contact" element={<Contact/>} />
           <Route path="/resume" element={<Resume/>} />
