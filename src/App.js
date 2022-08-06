@@ -55,14 +55,8 @@
 // export default App;
 
 
-import { Route, Switch, Redirect } from 'react-router-dom'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-// import About from "./pages/About";
-// import Contact from "./pages/Contact";
-// import Portfolio from "./pages/Portfolio";
-// import Resume from "./pages/Resume";
-// import Header from './components/Header';
 import AboutMe from './components/about';
 import Portfolio from './components/portfolio';
 import Contact from './components/contact';
