@@ -1,5 +1,5 @@
 import './App.css';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AboutMe from './components/about';
 import Portfolio from './components/portfolio';
 import Contact from './components/contact';
@@ -15,9 +15,9 @@ function App() {
       <div className='content'>
         <Routes>
           <Route path="/portfolio" element={<AboutMe/>} />
-          <Route path="/portfolio/work" element={<Portfolio/>} />
-          <Route path="/portfolio/contact" element={<Contact/>} />
-          <Route path="/portfolio/resume" element={<Resume/>} />
+          <Route path="/work" element={<Portfolio/>} />
+          <Route path="/contact" element={<Contact/>} />
+          <Route path="/resume" element={<Resume/>} />
         </Routes>
       </div>
       </Router>
